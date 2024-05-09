@@ -44,11 +44,9 @@ int pair_second(pair_t p){
  */
 
 pair_t pair_swapped(pair_t p) {
-    int temp = p.values[0];
-    p.values[0] = p.values[1];
-    p.values[1] = temp;
-
-    return p;
+    pair_t q;
+    q = pair_new(pair_secound(p), pair_first(p)) 
+    return q;
 }
 
 /*
